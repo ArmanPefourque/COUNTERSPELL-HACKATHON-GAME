@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5183738083396621250}
   - component: {fileID: 5148848970604090927}
   - component: {fileID: 2556230825640694474}
+  - component: {fileID: 7236476892213157394}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -178,3 +179,18 @@ MonoBehaviour:
   floors: []
   moveSpeed: 5
   rb: {fileID: 5183738083396621250}
+--- !u!114 &7236476892213157394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472650429409958921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3220f91e7478e8e48a1b6e6a217af7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenShots: 0.5
+  bulletPrefab: {fileID: 6246989365597543162, guid: aece27742ef6d5442be8c10faa68c52c, type: 3}
+  bulletSpeed: 10

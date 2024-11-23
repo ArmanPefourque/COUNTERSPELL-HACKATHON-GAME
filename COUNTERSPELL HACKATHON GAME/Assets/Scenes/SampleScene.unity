@@ -171,6 +171,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7236476892213157394, guid: 4f81e28b825c3d94eb36a468041150cc, type: 3}
+      propertyPath: bulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236476892213157394, guid: 4f81e28b825c3d94eb36a468041150cc, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 6246989365597543162, guid: aece27742ef6d5442be8c10faa68c52c, type: 3}
+    - target: {fileID: 7236476892213157394, guid: 4f81e28b825c3d94eb36a468041150cc, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184,6 +196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3465495345485427161, guid: bcb513e1aefd3764db6dffe94b4b4708, type: 3}
+      propertyPath: smooth
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6422110277688896814, guid: bcb513e1aefd3764db6dffe94b4b4708, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
