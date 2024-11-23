@@ -2,22 +2,25 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public float speed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float moveSpeed = 5f;
+    private Rigidbody2D rb;
+    private Vector2 movement;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
- 
-                    Vector2 moveVector = new Vector2 (Input.GetAxis("Horizontal"),Input.GetAxis("Vertical")) * speed  * Time.deltaTime;
-        rb.linearVelocity = moveVector;
+        // Get input from the player
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
     }
-    private void LateUpdate() {
 
+    void FixedUpdate()
+    {
+        // Move the player
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
