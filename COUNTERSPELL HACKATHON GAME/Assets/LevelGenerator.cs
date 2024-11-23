@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
@@ -19,7 +20,7 @@ public class LevelGenerator : MonoBehaviour
     float chanceWalkerDestoy = 0.05f;
     int maxWalkers = 10;
     float percentToFill = 0.2f;
-    public GameObject wallObj, floorObj;
+    public GameObject[] wallObj, floorObj;
     void Start()
     {
         Setup();
@@ -210,10 +211,10 @@ public class LevelGenerator : MonoBehaviour
                     case gridSpace.empty:
                         break;
                     case gridSpace.floor:
-                        Spawn(x, y, floorObj);
+                        Spawn(x, y, floorObj[Random.Range(0, floorObj.Length)]);
                         break;
                     case gridSpace.wall:
-                        Spawn(x, y, wallObj);
+                        Spawn(x, y, wallObj[Random.Range(0, wallObj.Length)]);
                         break;
                 }
             }
