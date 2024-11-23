@@ -8,8 +8,8 @@ public class LevelGenerator : MonoBehaviour
     enum gridSpace { empty, floor, wall };
     gridSpace[,] grid;
     int roomHeight, roomWidth;
-    Vector2 roomSizeWorldUnits = new Vector2(30, 30);
-    float worldUnitsInOneGridCell = 1;
+    Vector2 roomSizeWorldUnits = new Vector2(120, 120);
+    float worldUnitsInOneGridCell = 3;
     struct walker
     {
         public Vector2 dir;

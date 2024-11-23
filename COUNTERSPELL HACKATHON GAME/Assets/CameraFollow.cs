@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public float smooth;
     public Transform player;
     public Vector3 offset;
 
@@ -10,8 +11,12 @@ public class CameraFollow : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.position = player.position + offset;
+        float xchange = (transform.position.x - player.transform.position.x)/smooth;
+        float ychange = (transform.position.y - player.transform.position.y)/smooth;
+        transform.position -= new Vector3 (xchange,ychange,0);
+    
     }
 }
+ 
