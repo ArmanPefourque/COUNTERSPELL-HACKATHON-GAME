@@ -21,13 +21,18 @@ public class LevelGenerator : MonoBehaviour
     int maxWalkers = 10;
     float percentToFill = 0.2f;
     public GameObject[] wallObj, floorObj;
+    public GameObject pf;
     void Start()
     {
+        
         Setup();
         CreateFloors();
         CreateWalls();
         RemoveSingleWalls();
         SpawnLevel();
+        pf = GameObject.FindGameObjectWithTag("pf");
+       AstarPath.active.Scan();
+        
     }
     void Setup()
     {
