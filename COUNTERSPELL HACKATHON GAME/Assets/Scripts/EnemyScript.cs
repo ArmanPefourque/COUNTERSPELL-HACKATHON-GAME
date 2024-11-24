@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class EnemyScript : MonoBehaviour
 {
+    public GameObject sm;
     public GameObject[] floors;
     public string first = "hi";
     private AIPath path;
@@ -11,10 +12,12 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private GameObject target;
     public List<GameObject> flors = new List<GameObject>();
+    public SanityScript ss;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        sm = GameObject.FindGameObjectWithTag("health bar");
+        ss = sm.GetComponent<SanityScript>();
     }
 
     // Update is called once per frame
@@ -40,8 +43,10 @@ public class EnemyScript : MonoBehaviour
         }
         path.maxSpeed = moveSpeed;
         path.destination = target.transform.position;
-        if (health <= 0){
+        if (health == 0){
+            
             Destroy(gameObject);
+            ss.AddTrauma(1);
         }
         
     }
