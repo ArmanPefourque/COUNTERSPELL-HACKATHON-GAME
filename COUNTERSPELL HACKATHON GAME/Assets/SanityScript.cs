@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-
+using UnityEngine.UI;
 public class SanityScript : MonoBehaviour
 {
     public List<Sprite> sprites = new List<Sprite>();
@@ -21,6 +21,7 @@ public class SanityScript : MonoBehaviour
     public void AddTrauma(int number)
     {
         sanity += number;
-        GetComponent<SpriteRenderer>().sprite  = sprites[5];
+        GetComponent<Image>().sprite  = sprites[sanity];
     }
+    
 }
