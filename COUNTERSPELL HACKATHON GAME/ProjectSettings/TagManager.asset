@@ -7,6 +7,8 @@ TagManager:
   - LevelHandler
   - floor
   - Wall
+  - pf
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - Water
   - UI
   - PostProcessing
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
