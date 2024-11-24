@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5244664164689278439}
   - component: {fileID: 1693046201858390254}
   - component: {fileID: 7242805300098491697}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -174,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floors: []
   first: hi
+  health: 0
   moveSpeed: 3
   target: {fileID: 0}
   flors: []
