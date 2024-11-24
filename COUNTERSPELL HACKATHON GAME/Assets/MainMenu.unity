@@ -479,7 +479,7 @@ MonoBehaviour:
   m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
-  m_sharedMaterial: {fileID: 3801089973633972308, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
+  m_sharedMaterial: {fileID: -1927398653999643537, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_text: Shrine of Life
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
-  m_sharedMaterial: {fileID: 3801089973633972308, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
+  m_sharedMaterial: {fileID: -1927398653999643537, guid: ae0941da2339aae41b4ed93e3520a438, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
