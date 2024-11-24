@@ -29,6 +29,8 @@ public class ShrineScript : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Portal").GetComponent<SpriteRenderer>().enabled = true;
                 GameObject.FindGameObjectWithTag("Portal").GetComponent<CircleCollider2D>().enabled = true;
             }
+
+            transform.parent.gameObject.GetComponent<Animation>().Play();
         }
     }
 }

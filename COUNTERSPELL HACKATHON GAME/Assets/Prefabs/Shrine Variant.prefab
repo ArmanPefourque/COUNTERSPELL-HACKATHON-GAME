@@ -89,7 +89,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &7638738906165071024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +274,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7927476684273810761, guid: e7d3518a71521324ea4e98d6dc7ca188, type: 3}
       insertIndex: -1
       addedObject: {fileID: -8534035374882768681}
+    - targetCorrespondingSourceObject: {fileID: 7927476684273810761, guid: e7d3518a71521324ea4e98d6dc7ca188, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3112981834798467005}
   m_SourcePrefab: {fileID: 100100000, guid: e7d3518a71521324ea4e98d6dc7ca188, type: 3}
 --- !u!1 &2727354746735702026 stripped
 GameObject:
@@ -353,6 +356,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.41748178, y: 0.55066967}
   m_EdgeRadius: 0
+--- !u!111 &3112981834798467005
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727354746735702026}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: fda51c994d27772429f30fb7f9bc735a, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!4 &6806152409178913487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1560993382165903244, guid: e7d3518a71521324ea4e98d6dc7ca188, type: 3}
