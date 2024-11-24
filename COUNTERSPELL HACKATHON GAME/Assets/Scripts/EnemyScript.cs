@@ -41,8 +41,7 @@ public class EnemyScript : MonoBehaviour
         path.maxSpeed = moveSpeed;
         path.destination = target.transform.position;
 
-        if (health <= 0)
-        {
+        if (health <= 0){
             Destroy(gameObject);
         }
         
