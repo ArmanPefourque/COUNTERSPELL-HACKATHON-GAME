@@ -7,5 +7,9 @@ public class PlayerBullet : MonoBehaviour
         if (col.CompareTag("Wall")) {
             Destroy(gameObject);
         }
+        if (col.CompareTag("enemy")){
+            col.GetComponent<EnemyScript>().health -=1;
+            Destroy(gameObject);
+        }
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int sanity;
     public GameObject[] floors;
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
