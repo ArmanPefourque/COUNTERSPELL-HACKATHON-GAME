@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
     public GameObject[] floors;
     public string first = "hi";
     private AIPath path;
+    public int health;
     [SerializeField] private float moveSpeed;
     [SerializeField] private GameObject target;
     public List<GameObject> flors = new List<GameObject>();
@@ -30,7 +31,7 @@ public class EnemyScript : MonoBehaviour
         {
             float xdist = floor.transform.position.x - target.transform.position.x;
             float ydist = floor.transform.position.y - target.transform.position.y;
-            if (Mathf.Sqrt((xdist*xdist) +(ydist*ydist)) < 50) {
+            if (Mathf.Sqrt((xdist*xdist) +(ydist*ydist))  > 10) {
                 flors.Add(floor);
             }
         }
@@ -39,6 +40,9 @@ public class EnemyScript : MonoBehaviour
         }
         path.maxSpeed = moveSpeed;
         path.destination = target.transform.position;
+        if (health <= 0){
+            Destroy(gameObject);
+        }
         
     }
 }
