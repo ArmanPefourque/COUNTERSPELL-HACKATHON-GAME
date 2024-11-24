@@ -54,4 +54,10 @@ public class EnemyScript : MonoBehaviour
         }
 
     }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player")){
+            ss.AddTrauma(3);
+            Destroy(gameObject);
+        }
+    }
 }
