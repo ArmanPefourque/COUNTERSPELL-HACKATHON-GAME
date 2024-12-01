@@ -25,5 +25,8 @@ public class BossFight : MonoBehaviour
 
             timeLeftUntilNextEnemySpawn = timeBetweenEnemySpawns;
         }
+        if (bossHealth <= 0) {
+            Destroy(gameObject);
+        }
     }
 }

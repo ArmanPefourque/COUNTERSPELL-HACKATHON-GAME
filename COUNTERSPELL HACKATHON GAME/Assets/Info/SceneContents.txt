@@ -1,0 +1,26 @@
+Please update this file as the project progresses.
+Capitalization is exactly as specified in this document.
+
+MainMenu Contents:
+Main Camera
+MenuCanvas
+EventSystem
+MenuAudio
+
+GameScene Contents:
+LevelGenerator
+Main Camera
+Player
+EnemySpawner
+pathfinder
+Portal
+BossFightBackground
+Canvas
+EventSystem
+PostProcessVolume
+GameAudio
+
+DeadScene Contents:
+Main Camera
+DeadCanvas
+EventSystem

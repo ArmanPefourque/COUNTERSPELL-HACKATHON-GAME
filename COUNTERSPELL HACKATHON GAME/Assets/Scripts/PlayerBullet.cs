@@ -11,5 +11,9 @@ public class PlayerBullet : MonoBehaviour
             col.GetComponent<EnemyScript>().health -=1;
             Destroy(gameObject);
         }
+        if(col.CompareTag("Boss")) {
+            col.GetComponent<BossFight>().bossHealth -=5;
+            Destroy(gameObject);
+        }
     }
 }

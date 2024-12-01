@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     private Vector2 movement;
+    //public static bool isMoving = false;
 
     private string first = "hi";
 
@@ -20,15 +21,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if (first == "hi"){
             first = "bye";
+            //Testing...
+            //TODO: will change later
         floors = GameObject.FindGameObjectsWithTag("floor");
 
         transform.position = floors[Random.Range(0, floors.Length)].transform.position;
+
+        //transform.position = new Vector3(500, 500, 0);
         }
         // Get input from the player
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
     }
 
     void FixedUpdate()
